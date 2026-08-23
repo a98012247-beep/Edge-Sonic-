@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #ccff00;
+  --color-bg-main: #F4F5F5;
+  --color-bg-card: #FFFFFF;
+  --color-bg-inverse: #111111;
+  --color-text-main: #111111;
+  --color-text-muted: #71717A;
+  --color-border-subtle: #E4E4E7;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D4D8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A1A1AA;
+}
+
+/* Slider for black cards */
+.custom-range {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100%;
+}
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  cursor: pointer;
+  margin-top: -8px;
+  box-shadow: 0 0 10px rgba(204, 255, 0, 0.3);
+}
+.custom-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+

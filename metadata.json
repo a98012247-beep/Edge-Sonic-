@@ -1,0 +1,8 @@
+{
+  "name": "Copy of SonicEdge TTS Dashboard",
+  "description": "A premium text-to-speech content creation dashboard utilizing edge-tts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
